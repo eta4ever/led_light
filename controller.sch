@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8269,97 +8269,86 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="switch-alps">
-<description>ALPS Switch from Markus Faust &amp;lt;mfaust@htwm.de&amp;gt;&lt;p&gt;
-Source: EC12E.scr from eagle.support.ger on news.cadsoft.de at 08.10.2007</description>
+<library name="pot">
+<description>&lt;b&gt;Potentiometers&lt;/b&gt;&lt;p&gt;
+Beckman, Copal, Piher, Spectrol, Schukat&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="ALPS_EC12E_SW">
-<description>ALPS rotary encoder&lt;br&gt;
-EC12E series with push-on switch</description>
-<wire x1="-6.2" y1="-6.6" x2="6.2" y2="-6.6" width="0.127" layer="21"/>
-<wire x1="6.2" y1="-6.6" x2="6.2" y2="6.6" width="0.127" layer="21"/>
-<wire x1="6.2" y1="6.6" x2="-6.2" y2="6.6" width="0.127" layer="21"/>
-<wire x1="-6.2" y1="6.6" x2="-6.2" y2="-6.6" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="1.5" x2="2.6" y2="1.5" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
-<pad name="A" x="-2.5" y="-7.5" drill="1" shape="square"/>
-<pad name="C" x="0" y="-7.5" drill="1" shape="square"/>
-<pad name="B" x="2.5" y="-7.5" drill="1" shape="square"/>
-<pad name="D" x="-2.5" y="7" drill="1" shape="square"/>
-<pad name="E" x="2.5" y="7" drill="1" shape="square"/>
-<pad name="GND1" x="-6.1" y="0" drill="2.2" shape="square"/>
-<pad name="GND2" x="6.1" y="0" drill="2.2" shape="square"/>
-<text x="-2.5" y="8.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="3.5" y="-9" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+<package name="3RP/1610N">
+<description>&lt;b&gt;16mm Potentiometer&lt;/b&gt; one level&lt;p&gt;
+Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
+<wire x1="-8.35" y1="-3.7" x2="8.35" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="-8.35" y1="-5.7" x2="-7.25" y2="-5.7" width="0.2032" layer="21"/>
+<wire x1="-8.35" y1="-3.7" x2="-8.35" y2="-5.7" width="0.2032" layer="21"/>
+<wire x1="-7.25" y1="-5.7" x2="-7.25" y2="-3.8" width="0.2032" layer="21"/>
+<wire x1="-8.35" y1="-1.7" x2="8.35" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-8.35" y1="5.4" x2="8.35" y2="5.4" width="0.2032" layer="21"/>
+<wire x1="-2.9" y1="-10.2" x2="-2.9" y2="-13.7" width="0.2032" layer="21"/>
+<wire x1="2.9" y1="-13.7" x2="2.9" y2="-10.2" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-3.8" x2="-3.4" y2="-9.9" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-9.9" x2="-2.9" y2="-10.2" width="0.2032" layer="21"/>
+<wire x1="2.9" y1="-10.2" x2="3.4" y2="-9.9" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="-9.9" x2="3.4" y2="-3.8" width="0.2032" layer="21"/>
+<wire x1="-2.9" y1="-10.2" x2="2.9" y2="-10.2" width="0.2032" layer="21"/>
+<wire x1="-2.9" y1="-13.7" x2="2.9" y2="-13.7" width="0.2032" layer="21"/>
+<wire x1="-8.35" y1="-3.7" x2="-8.35" y2="5.4" width="0.2032" layer="21"/>
+<wire x1="8.35" y1="-3.7" x2="8.35" y2="5.4" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-9.525" x2="3.3" y2="-9" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-9.025" x2="3.3" y2="-8.5" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-8.525" x2="3.3" y2="-8" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-8.025" x2="3.3" y2="-7.5" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-7.525" x2="3.3" y2="-7" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-7.025" x2="3.3" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-6.525" x2="3.3" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-6.025" x2="3.3" y2="-5.5" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-5.525" x2="3.3" y2="-5" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-5.025" x2="3.3" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-4.525" x2="3.3" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-3.075" y1="-10.025" x2="3.3" y2="-9.5" width="0.2032" layer="21"/>
+<pad name="1" x="-5" y="0" drill="1.2" diameter="2.1844"/>
+<pad name="2" x="0" y="0" drill="1.2" diameter="2.1844"/>
+<pad name="3" x="5" y="0" drill="1.2" diameter="2.1844"/>
+<text x="-8.255" y="5.715" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="ENCODER">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="4.1275" width="0.3048" layer="94"/>
-<wire x1="-2.54" y1="4.1275" x2="-0.9525" y2="1.905" width="0.3048" layer="94"/>
-<wire x1="-1.905" y1="1.905" x2="-2.54" y2="1.905" width="0.3048" layer="94"/>
-<wire x1="-2.54" y1="1.905" x2="-2.54" y2="0" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="4.1275" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="4.1275" x2="4.1275" y2="1.905" width="0.3048" layer="94"/>
-<wire x1="3.175" y1="1.905" x2="2.54" y2="1.905" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="1.905" x2="2.54" y2="0" width="0.3048" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<circle x="0" y="0" radius="0.5679" width="0" layer="94"/>
-<text x="-3.81" y="0" size="1.27" layer="95" rot="R90">&gt;PART</text>
-<text x="6.35" y="0" size="1.27" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="C" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="-2.54" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="B" x="2.54" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
-</symbol>
-<symbol name="TASTER">
-<wire x1="-2.54" y1="0" x2="-1.5875" y2="0" width="0.3048" layer="94"/>
-<wire x1="-1.5875" y1="0" x2="0.635" y2="1.5875" width="0.3048" layer="94"/>
-<wire x1="0.635" y1="0.635" x2="0.635" y2="0" width="0.3048" layer="94"/>
-<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.3048" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="3.81" width="0.127" layer="94" style="shortdash"/>
-<wire x1="-0.635" y1="3.81" x2="0.635" y2="3.81" width="0.127" layer="94"/>
-<wire x1="-0.635" y1="3.81" x2="-0.635" y2="3.4925" width="0.127" layer="94"/>
-<wire x1="0.635" y1="3.81" x2="0.635" y2="3.4925" width="0.127" layer="94"/>
-<text x="-5.08" y="5.08" size="1.27" layer="95">&gt;PART</text>
-<text x="-5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="GEHAEUSEANSCHLUSS">
-<wire x1="0" y1="0" x2="0.9525" y2="0" width="0.254" layer="94"/>
-<wire x1="1.5875" y1="0" x2="2.2225" y2="0" width="0.254" layer="94"/>
-<wire x1="2.8575" y1="0" x2="3.4925" y2="0" width="0.254" layer="94"/>
-<wire x1="4.1275" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<pin name="G" x="0" y="0" visible="pad" length="point" direction="pas"/>
+<symbol name="POT_EU-">
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-3.1989" y2="2.4495" width="0.1524" layer="94"/>
+<wire x1="-3.1989" y1="2.4495" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="EC12E_SW" prefix="SW">
-<description>ALPS rotary Encoder EC12E series with switch</description>
+<deviceset name="3RP/1610N" prefix="R" uservalue="yes">
+<description>&lt;b&gt;16mm Potentiometer&lt;/b&gt; one level&lt;p&gt;
+Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 <gates>
-<gate name="G$1" symbol="ENCODER" x="-10.16" y="-2.54" addlevel="always"/>
-<gate name="G$2" symbol="TASTER" x="10.16" y="5.08" addlevel="always"/>
-<gate name="G$3" symbol="GEHAEUSEANSCHLUSS" x="10.16" y="-5.08" addlevel="request"/>
-<gate name="G$4" symbol="GEHAEUSEANSCHLUSS" x="10.16" y="-7.62" addlevel="request"/>
+<gate name="G$1" symbol="POT_EU-" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ALPS_EC12E_SW">
+<device name="" package="3RP/1610N">
 <connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$2" pin="1" pad="D"/>
-<connect gate="G$2" pin="2" pad="E"/>
-<connect gate="G$3" pin="G" pad="GND1"/>
-<connect gate="G$4" pin="G" pad="GND2"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="EC12E2424407" constant="no"/>
-<attribute name="OC_FARNELL" value="1520813" constant="no"/>
-<attribute name="OC_NEWARK" value="74M1068" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8398,11 +8387,10 @@ EC12E series with push-on switch</description>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="0204/7" value="470"/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="0204/7" value="470"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="0204/7" value="470"/>
 <part name="LED2" library="led" deviceset="LED" device="3MM"/>
-<part name="LED3" library="led" deviceset="LED" device="3MM"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="SW1" library="switch-alps" deviceset="EC12E_SW" device=""/>
+<part name="R7" library="pot" deviceset="3RP/1610N" device="" value="10K"/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8434,18 +8422,12 @@ EC12E series with push-on switch</description>
 </instance>
 <instance part="R4" gate="G$1" x="-1498.6" y="-93.98" smashed="yes"/>
 <instance part="R5" gate="G$1" x="-1498.6" y="-96.52" smashed="yes"/>
-<instance part="R6" gate="G$1" x="-1498.6" y="-99.06" smashed="yes">
-<attribute name="VALUE" x="-1497.33" y="-102.362" size="1.778" layer="96"/>
-</instance>
 <instance part="LED2" gate="G$1" x="-1508.76" y="-96.52" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-1513.332" y="-102.235" size="1.778" layer="96"/>
 </instance>
-<instance part="LED3" gate="G$1" x="-1513.84" y="-99.06" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-1518.412" y="-104.775" size="1.778" layer="96"/>
-</instance>
-<instance part="GND6" gate="1" x="-1518.92" y="-104.14"/>
-<instance part="SW1" gate="G$1" x="-1506.22" y="-114.3" rot="R270"/>
-<instance part="SW1" gate="G$2" x="-1503.68" y="-129.54"/>
+<instance part="GND6" gate="1" x="-1518.92" y="-101.6"/>
+<instance part="R7" gate="G$1" x="-1442.72" y="-91.44" rot="R180"/>
+<instance part="GND7" gate="1" x="-1442.72" y="-104.14"/>
 </instances>
 <busses>
 </busses>
@@ -8557,10 +8539,10 @@ EC12E series with push-on switch</description>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="-1450.34" y1="-53.34" x2="-1440.18" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-1440.18" y1="-53.34" x2="-1440.18" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="-1450.34" y1="-53.34" x2="-1435.1" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-1435.1" y1="-53.34" x2="-1435.1" y2="-99.06" width="0.1524" layer="91"/>
 <pinref part="ARDUINO1" gate="G$1" pin="A0"/>
-<wire x1="-1440.18" y1="-99.06" x2="-1452.88" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="-1435.1" y1="-99.06" x2="-1452.88" y2="-99.06" width="0.1524" layer="91"/>
 <junction x="-1450.34" y="-53.34"/>
 </segment>
 </net>
@@ -8592,12 +8574,14 @@ EC12E series with push-on switch</description>
 <wire x1="-1518.92" y1="-93.98" x2="-1518.92" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="-1518.92" y1="-96.52" x2="-1518.92" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="-1518.92" y1="-99.06" x2="-1518.92" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="-1518.92" y1="-96.52" x2="-1513.84" y2="-96.52" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <junction x="-1518.92" y="-96.52"/>
-<junction x="-1518.92" y="-99.06"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="E"/>
+<wire x1="-1442.72" y1="-96.52" x2="-1442.72" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -8621,13 +8605,6 @@ EC12E series with push-on switch</description>
 <wire x1="-1493.52" y1="-96.52" x2="-1483.36" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="ARDUINO1" gate="G$1" pin="D6"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="-1483.36" y1="-99.06" x2="-1493.52" y2="-99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
@@ -8635,17 +8612,11 @@ EC12E series with push-on switch</description>
 <wire x1="-1506.22" y1="-96.52" x2="-1503.68" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-1511.3" y1="-99.06" x2="-1503.68" y2="-99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="ARDUINO1" gate="G$1" pin="VCC"/>
-<wire x1="-1452.88" y1="-78.74" x2="-1422.4" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-1452.88" y1="-78.74" x2="-1442.72" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-1442.72" y1="-78.74" x2="-1422.4" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="-1422.4" y1="-78.74" x2="-1422.4" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="A1" pin="VO"/>
@@ -8655,47 +8626,17 @@ EC12E series with push-on switch</description>
 <junction x="-1409.7" y="-71.12"/>
 <wire x1="-1409.7" y1="-71.12" x2="-1402.08" y2="-71.12" width="0.1524" layer="91"/>
 <label x="-1402.08" y="-71.12" size="1.778" layer="95" xref="yes"/>
-<label x="-1508.76" y="-137.16" size="1.778" layer="95" xref="yes"/>
+<pinref part="R7" gate="G$1" pin="A"/>
+<wire x1="-1442.72" y1="-86.36" x2="-1442.72" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="-1442.72" y="-78.74"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="N$11" class="0">
 <segment>
-<pinref part="ARDUINO1" gate="G$1" pin="D7"/>
-<wire x1="-1488.44" y1="-101.6" x2="-1483.36" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="A"/>
-<wire x1="-1498.6" y1="-111.76" x2="-1488.44" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="-1488.44" y1="-111.76" x2="-1488.44" y2="-101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="SW1" gate="G$1" pin="B"/>
-<wire x1="-1498.6" y1="-116.84" x2="-1485.9" y2="-116.84" width="0.1524" layer="91"/>
-<wire x1="-1485.9" y1="-116.84" x2="-1485.9" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="ARDUINO1" gate="G$1" pin="D8"/>
-<wire x1="-1485.9" y1="-104.14" x2="-1483.36" y2="-104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="ARDUINO1" gate="G$1" pin="D9"/>
-<wire x1="-1483.36" y1="-106.68" x2="-1483.36" y2="-119.38" width="0.1524" layer="91"/>
-<wire x1="-1483.36" y1="-119.38" x2="-1496.06" y2="-119.38" width="0.1524" layer="91"/>
-<wire x1="-1496.06" y1="-119.38" x2="-1496.06" y2="-129.54" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$2" pin="1"/>
-<wire x1="-1496.06" y1="-129.54" x2="-1498.6" y2="-129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="SW1" gate="G$1" pin="C"/>
-<wire x1="-1508.76" y1="-114.3" x2="-1511.3" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="-1511.3" y1="-114.3" x2="-1511.3" y2="-129.54" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$2" pin="2"/>
-<wire x1="-1511.3" y1="-129.54" x2="-1511.3" y2="-137.16" width="0.1524" layer="91"/>
-<wire x1="-1511.3" y1="-129.54" x2="-1508.76" y2="-129.54" width="0.1524" layer="91"/>
-<junction x="-1511.3" y="-129.54"/>
-<wire x1="-1511.3" y1="-137.16" x2="-1508.76" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="ARDUINO1" gate="G$1" pin="A1"/>
+<pinref part="R7" gate="G$1" pin="S"/>
+<wire x1="-1452.88" y1="-96.52" x2="-1447.8" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-1447.8" y1="-96.52" x2="-1447.8" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
